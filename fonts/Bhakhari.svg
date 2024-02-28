@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Bhakhari shape -->
+  <circle cx="100" cy="100" r="80" fill="#f5f5dc" stroke="#d4af37" stroke-width="2" />
+
+  <!-- Text indicating Bhakhari -->
+  <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" font-family="Arial" font-size="20" fill="#8b4513">Bhakhari</text>
+</svg>
