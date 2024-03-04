@@ -24,7 +24,9 @@
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
+  
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -53,6 +55,7 @@
   }
 </style>
 <body class="hidden-bar-wrapper text-center">
+  
   <div class="page-wrapper">
     <!-- Preloader -->
     <!--<div class="preloader"></div>-->
@@ -193,9 +196,22 @@
       </div>
     </section>
     <!-- End Page Title -->
-<div class="position-relative">
-  <h2 id="productTitle" class="mt-4 btn-shine" >Dry Bhakhari</h2>
-</div>
+    <div class="position-relative">
+      <h2 id="productTitle" class="mt-4 btn-shine">Dry Bhakhari</h2>
+      <div class="popup" id="popup">
+          <div class="popup-inner">
+              <div class="popup__photo">
+                  <img id="popupImage" src="" alt="">
+              </div>
+              <div class="popup__text">
+                  <!-- <h1>Lorem ipsum dolor sit amet</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non vulputate vitae, blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam sed varius nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget felis sit amet eros viverra pulvinar.</p> -->
+              </div>
+              <a class="popup__close" href="#">X</a>
+          </div>
+      </div>
+  </div>
+  
     <div class="productsBtns mt-5 pt-5">
       <button class="productBtn fs-2" productNo="1">Dry Bhakhari</button>
       <button class="productBtn" productNo="2">Fresh Bhakhari</button>
@@ -209,24 +225,20 @@
           <div class="row clearfix">
             <div class="gallery-block col-lg-4 col-md-6 col-sm-12">
               <div class="inner-box">
-                <figure class="image-box">
-                  <img src="images/Dry-Bhakhari/MS5_3445 _ok.jpg" alt="" />
-                  <!-- Overlay Box -->
-                  <div class="overlay-box">
-                    <div class="overlay-inner">
-                      <div class="content">
-                        <a
-                          href="images/Dry-Bhakhari/MS5_3445 _ok.jpg"
-                          data-fancybox="gallery"
-                          data-caption="PLAIN"
-                          class="icon flaticon-plus"
-                        ></a>
+                  <figure class="image-box">
+                      <img src="images/Dry-Bhakhari/MS5_3445 _ok.jpg" alt="" />
+                      <!-- Overlay Box -->
+                      <div class="overlay-box">
+                          <div class="overlay-inner">
+                              <div class="content">
+                                  <a href="#" class="icon flaticon-plus"></a>
+                                  <a href="#popup" class="icon flaticon-dashboard"></a>
+                              </div>
+                          </div>
                       </div>
-                    </div>
-                  </div>
-                </figure>
+                  </figure>
               </div>
-            </div>
+          </div>
 
             <div class="gallery-block col-lg-4 col-md-6 col-sm-12">
               <div class="inner-box">
@@ -365,26 +377,23 @@
       <section class="gallery-page-section-two">
         <div class="auto-container">
           <div class="row clearfix">
+
             <div class="gallery-block col-lg-4 col-md-6 col-sm-12">
               <div class="inner-box">
-                <figure class="image-box">
-                  <img src="images/Dry-Bhakhari/MS5_3445 _ok.jpg" alt="" />
-                  <!-- Overlay Box -->
-                  <div class="overlay-box">
-                    <div class="overlay-inner">
-                      <div class="content">
-                        <a
-                          href="images/Dry-Bhakhari/MS5_3445 _ok.jpg"
-                          data-fancybox="gallery"
-                          data-caption="PLAIN"
-                          class="icon flaticon-plus"
-                        ></a>
+                  <figure class="image-box">
+                      <img src="images/Dry-Bhakhari/MS5_3445 _ok.jpg" alt="" />
+                      <!-- Overlay Box -->
+                      <div class="overlay-box">
+                          <div class="overlay-inner">
+                              <div class="content">
+                                  <a href="#" class="icon flaticon-plus"></a>
+                                  <a href="#popup" class="icon flaticon-dashboard"></a>
+                              </div>
+                          </div>
                       </div>
-                    </div>
-                  </div>
-                </figure>
+                  </figure>
               </div>
-            </div>
+          </div>
 
             <div class="gallery-block col-lg-4 col-md-6 col-sm-12">
               <div class="inner-box">
@@ -536,6 +545,7 @@
                           data-caption="PLAIN"
                           class="icon flaticon-plus"
                         ></a>
+                        <a href="#popup" class="icon flaticon-dashboard"></a>
                       </div>
                     </div>
                   </div>
@@ -1124,7 +1134,10 @@ font-family: monospace;" >
     <span class="fa fa-arrow-up"></span>
   </div>
 
+
+
   <script src="js/jquery.js"></script>
+ 
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.fancybox.js"></script>
@@ -1140,22 +1153,40 @@ font-family: monospace;" >
   <script src="js/script.js"></script>
   <script src="C_layout/seprate.js"></script>
   <script>
-    // Call the loadContent() function to fetch and insert content
-    // loadContent();
-    let productBtns = document.querySelectorAll(".productBtn");
-
-    productBtns.forEach((productBtn) => {
-      productBtn.addEventListener("click", (e) => {
-        let productNo = e.target.getAttribute("productNo");
-        let targetedDiv = document.getElementById("productsDiv" + productNo);
-        // targetedDiv.style.display = "block";
-        let productHeading = document.getElementById("productTitle");
-        if (productNo === "1") productHeading.innerText = `Dry Bhakhari`;
-        else if (productNo === "2") productHeading.innerText = `Fresh Bhakhari`;
-        else if (productNo === "3") productHeading.innerText = `Methi Thepla`;
-        else productHeading.innerText = `Jeera Chapdi`;
-        document.getElementById("productDiv").innerHTML = targetedDiv.innerHTML;
-      });
-    });
-  </script>
+    document.addEventListener('DOMContentLoaded', function () {
+         // JavaScript to handle image source passing to popup
+         var imageSources = []; // Array to store image sources
+ 
+         // Loop through each image box and store their image sources
+         document.querySelectorAll('.image-box img').forEach(function(img) {
+             imageSources.push(img.getAttribute('src'));
+         });
+ 
+         // Add click event listener to all dashboard icons
+         document.querySelectorAll('.flaticon-dashboard').forEach(function(icon, index) {
+             icon.addEventListener('click', function () {
+                 // Get the index of the clicked image box
+                 var clickedIndex = index;
+ 
+                 // Set the source of the popup image to the corresponding image in the array
+                 document.getElementById('popupImage').setAttribute('src', imageSources[clickedIndex]);
+             });
+         });
+ 
+         // JavaScript to handle product buttons
+         let productBtns = document.querySelectorAll(".productBtn");
+ 
+         productBtns.forEach((productBtn) => {
+             productBtn.addEventListener("click", (e) => {
+                 let productNo = e.target.getAttribute("productNo");
+                 // For demonstration purposes, set the product title based on the product number
+                 let productHeading = document.getElementById("productTitle");
+                 if (productNo === "1") productHeading.innerText = `Dry Bhakhari`;
+                 else if (productNo === "2") productHeading.innerText = `Fresh Bhakhari`;
+                 else if (productNo === "3") productHeading.innerText = `Methi Thepla`;
+                 else productHeading.innerText = `Jeera Chapdi`;
+             });
+         });
+     });
+ </script>
 </body>
