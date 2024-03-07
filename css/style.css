@@ -7677,7 +7677,7 @@ html {
 	  background-position: 180px; /* Move background position to create shine effect */
 	}
 	100% {
-	  background-position: 180px; /* Final background position */
+	  background-position: 280px; /* Final background position */
 	}
   }
   
