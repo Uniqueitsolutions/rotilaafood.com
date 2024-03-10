@@ -7751,8 +7751,9 @@ html {
 	 align-items: center;
 	 max-width: 800px;
 	 max-height: 600px;
-	 width: 96%;
-	 height: 81%;
+	 width: 82%;
+	 BORDER-RADIUS: 11%;
+	 /* height: 81%; */
 	 background-color: #fff;
 	 transform: rotate(32deg);
 	 transition: 0.64s ease-in-out;
@@ -7766,7 +7767,8 @@ html {
 }
  .popup__photo img {
 	 width: auto;
-	 height: 100%;
+	 border-radius: 6%;
+	 /* height: 100%; */
 }
  .popup__text {
 	 display: flex;
