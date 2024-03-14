@@ -7814,4 +7814,11 @@ html {
 	 cursor: pointer;
 	 text-decoration: none;
 }
+.d-btn{
+	border-radius: 0px;
+	border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+	background-color: #ff8c00 !important;
+	border-color: #ff8c00;
+}
  

@@ -15,8 +15,7 @@ function loadContent() {
     .then(() => {})
     .catch((error) => console.error("Error loading content:", error));
 
-  fetchPromises.push(fetchAndSetContent("C_layout/header.html", "header"));
-  fetchPromises.push(fetchAndSetContent("C_layout/footer.html", "footer"));
+
 
   // addScriptFiles("js/jquery.js");
   // addScriptFiles("js/popper.min.js");
