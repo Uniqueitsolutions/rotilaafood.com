@@ -11,7 +11,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.+)/$ /$1 [L,R=301]
 
 RewriteRule ^About-Us$ about.html [L]
-RewriteRule ^Varietys product.html [L]
+RewriteRule ^Varieties product.html [L]
 RewriteRule ^Contact-Us contact.html [L]
 RewriteRule ^Home$ index.html [L]
 # Set default index file
