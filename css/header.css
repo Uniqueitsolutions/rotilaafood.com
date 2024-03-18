@@ -281,7 +281,7 @@
 
 .main-menu .navigation>li:hover::before,
 .main-menu .navigation>li.current::before {
-	opacity: 1;
+	/* opacity: 1; */
 	width: 100%;
 	z-index: 1;
 }
