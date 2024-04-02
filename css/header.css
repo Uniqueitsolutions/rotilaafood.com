@@ -264,7 +264,7 @@
 	-webkit-transition: all 500ms ease;
 	-ms-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
-	background: url(../images/icons/menu-separater.png) repeat-x;
+	background: url(../images/icons/menu-separater.webp) repeat-x;
 	animation: slide 25s linear infinite;
 	-webkit-animation: slide 25s linear infinite;
 }

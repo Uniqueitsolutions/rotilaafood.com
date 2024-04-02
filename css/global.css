@@ -349,7 +349,7 @@ img{
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
 	transition:all 300ms ease;
-	background:#ffffff url(../images/icons/btn-icon.png) no-repeat;
+	background:#ffffff url(../images/icons/btn-icon.webp) no-repeat;
 }
 
 .btn-style-one:hover{
@@ -388,7 +388,7 @@ img{
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
 	transition:all 300ms ease;
-	background:#FF8C00 url(../images/icons/btn-icon-1.png) no-repeat;
+	background:#FF8C00 url(../images/icons/btn-icon-1.webp) no-repeat;
 }
 
 .btn-style-two:hover .icon{
@@ -432,7 +432,7 @@ img{
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
 	transition:all 300ms ease;
-	background:#FF8C00 url(../images/icons/btn-icon-1.png) no-repeat;
+	background:#FF8C00 url(../images/icons/btn-icon-1.webp) no-repeat;
 }
 
 .btn-style-three:hover .icon{
@@ -582,7 +582,7 @@ img{
 	width:70px;
 	height:22px;
 	margin-top:10px !important;
-	background:url(../images/icons/separate.png) no-repeat;
+	background:url(../images/icons/separate.webp) no-repeat;
 }
 
 .sec-title.centered .separate{

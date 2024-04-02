@@ -2245,7 +2245,7 @@
 		}
 
 		if (video.type === 'youtube') {
-			path = "//img.youtube.com/vi/" + video.id + "/hqdefault.jpg";
+			path = "//img.youtube.com/vi/" + video.id + "/hqdefault.webp";
 			create(path);
 		} else if (video.type === 'vimeo') {
 			$.ajax({
