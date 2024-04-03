@@ -213,5 +213,4 @@ c12 -23 22 -56 22 -74 0 -17 4 -34 9 -38 5 -3 10 -24 10 -48 3 -127 12 -260
 <path d="M1337 367 c-21 -33 -6 -60 20 -34 11 11 13 17 5 17 -10 0 -10 5 -2
 20 15 28 -4 25 -23 -3z"/>
 </g>
-<animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0" to="360" dur="5s" repeatCount="indefinite" />
 </svg>
