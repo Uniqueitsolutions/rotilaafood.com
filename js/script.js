@@ -7,6 +7,7 @@
 	function handlePreloader() {
 		if($('.preloader').length){
 			$('.preloader').delay(200).fadeOut(500);
+			$('.preloader-head').delay(200).fadeOut(500);
 		}
 	}
 	
