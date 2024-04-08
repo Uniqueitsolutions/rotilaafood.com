@@ -849,7 +849,12 @@
         const email = document.getElementById("email").value;
         const subject = document.getElementById("subject").value;
         const message = document.getElementById("message").value;
+        const parsedNumber = parseFloat(numberInput);
 
+        if (isNaN(parsedNumber)) {
+            alert("Please enter a valid number.");
+            return;
+        }
         // Create email data
         const emailData = {
           Host: "216.10.241.228",
